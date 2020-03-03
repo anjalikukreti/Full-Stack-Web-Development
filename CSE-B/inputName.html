@@ -1,19 +1,23 @@
-<html>
-<head>
-<title>Input Details</title>
-</head>
-<body>
-    firstName: <input id="first" type="text" placeholder="Enter FirstName"><br>
-    lastName: <input id="last" type="text" placeholder="Enter LastName"><br>
-    <input id='btn' type="submit">
-    
-    <script type="text/javascript">
-    document.getElementById('btn').onclick = function(){
-        firstName = document.getElementById('first').value;
-        lastName = document.getElementById('last').value;
-        
-        console.log(firstName +' '+lastName);
-    }   
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Input Details</title>
+  </head>
+  <body>
+    <p><h1><b></b></h1></p>
+
+    firstName: <input id="first" type="text" name="" value="" placeholder="enter first name"><br>
+    lastname: <input id="last" type="text" name="" value="" placeholder="enter second name"><br>
+    <input id='btn' type="submit" >
+	<script type="text/javascript">
+	document.getElementById('btn').onclick = function()
+        {
+          firstName=document.getElementById('first').value;
+          lastname=document.getElementById('last').value;
+
+          console.log(firstName + ' '+lastname);
+        }
     </script>
-</body>
+  </body>
 </html>
